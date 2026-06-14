@@ -23,9 +23,7 @@ jobs:
           gradle-version: '8.8'
 
       - name: Build remapped JAR
-        run: |
-          chmod +x knockback-mod/gradlew
-          knockback-mod/gradlew remapJar --no-daemon --project-dir knockback-mod
+        run: gradle remapJar --no-daemon --project-dir knockback-mod
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
