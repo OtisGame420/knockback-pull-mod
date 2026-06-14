@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "knockbackmod",
+  "version": "1.0.0",
+  "name": "Knockback Pull Mod",
+  "description": "Pull entities towards the player with a keybind (default: R)",
+  "authors": ["Player"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.knockbackmod.KnockbackMod"],
+    "client": ["com.knockbackmod.KnockbackModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
